@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="P2Geocoding" />
+        <module name="gs-MockForHttpClient" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gs-MockForHttpClient" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

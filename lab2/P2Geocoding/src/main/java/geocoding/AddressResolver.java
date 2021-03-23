@@ -1,3 +1,11 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package geocoding;
+
+import connection.ISimpleHttpClient;
 import org.apache.http.ParseException;
 import org.apache.http.client.utils.URIBuilder;
 import org.json.simple.JSONArray;
@@ -9,11 +17,14 @@ import java.net.URISyntaxException;
 import java.util.Formatter;
 import java.util.Locale;
 
+/**
+ * @author ico
+ */
 public class AddressResolver {
 
-    private TqsHttpClient httpClient;
+    private ISimpleHttpClient httpClient;
 
-    public AddressResolver(TqsHttpBasic httpClient) {
+    public AddressResolver(ISimpleHttpClient httpClient) {
         this.httpClient = httpClient;
     }
 
@@ -22,7 +33,7 @@ public class AddressResolver {
 
         String apiKey = ConfigUtils.getPropertyFromConfig("mapquest_key");
 
-        URIBuilder uriBuilder = new URIBuilder("http://open.mapquestapi.com/geocoding/v1/reverse");
+        URIBuilder uriBuilder = new URIBuilder("http://open.mapquestapi.com/geocoding/v1/reverse?key=uXSAVwYWbf9tJmsjEGHKKAo0gOjZfBLQ&location=40.6318,-8.658&includeRoadMetadata=true");
         uriBuilder.addParameter("key", apiKey);
         uriBuilder.addParameter("location", (new Formatter()).format(Locale.US, "%.6f,%.6f", latitude, longitude).toString());
         uriBuilder.addParameter("includeRoadMetadata", "true");
@@ -46,4 +57,3 @@ public class AddressResolver {
         return new Address(road, city, state, zip, null);
     }
 }
-
