@@ -72,6 +72,8 @@ class SampleTest {
         browser.findElement(By.id("nameOnCard")).click();
         browser.findElement(By.id("nameOnCard")).sendKeys("Pedro");
         browser.findElement(By.cssSelector(".btn-primary")).click();
+
+        assertEquals(browser.getTitle(), "BlazeDemo Confirmation");
     }
 
     @AfterEach
