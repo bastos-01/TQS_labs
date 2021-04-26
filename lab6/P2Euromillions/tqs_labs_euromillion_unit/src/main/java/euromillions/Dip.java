@@ -50,18 +50,18 @@ public class Dip {
         Random generator = new Random();
 
         Dip randomDip = new Dip();
-        for (int i = 0; i < NUM_NUMBERS; ) {
+        for (int i = 0; i < NUM_NUMBERS; i++) {
             int candidate = generator.nextInt(MAX_NUMBER - 1) + 1;
             if (!randomDip.getNumbersColl().contains(candidate)) {
                 randomDip.getNumbersColl().add(candidate);
-                i++;
+                i--;
             }
         }
-        for (int i = 0; i < NUM_STARTS; ) {
+        for (int i = 0; i < NUM_STARTS; i++) {
             int candidate = generator.nextInt(MAX_STAR - 1) + 1;
             if (!randomDip.getStarsColl().contains(candidate)) {
                 randomDip.getStarsColl().add(candidate);
-                i++;
+                i--;
             }
         }
         return randomDip;

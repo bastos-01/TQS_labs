@@ -57,7 +57,7 @@ public class SetOfNaturalsTest {
 
     @Test
     public void testIntersectForNoIntersection() {
-        assertFalse(setA.intersects(setB), "no intersection but was reported as existing");
+        assertFalse(setA.intersects(), "no intersection but was reported as existing");
 
     }
 
@@ -69,7 +69,7 @@ public class SetOfNaturalsTest {
 
     @Test
     public void testSize(){
-        assertEquals(setB.size(), 6);
+        assertEquals(6, setB.size());
     }
 
     @Test

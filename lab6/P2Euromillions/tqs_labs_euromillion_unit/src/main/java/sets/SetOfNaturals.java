@@ -41,7 +41,7 @@ public class SetOfNaturals implements Iterable<Integer> {
 	}
 
 
-	public boolean intersects(SetOfNaturals subset) {
+	public boolean intersects() {
 		return false;
 	}
 
