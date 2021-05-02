@@ -29,6 +29,5 @@ Although it has passed, it has a bug in the code and a security hotspot. After a
 
 The total technical debt found was **2h10min**. This value means that it would take aproximatly 2h20min to refactor the code and solve this issues. The file that would take the most time to solve is in ***src/main/java/ui/DemoMain.java***, as it has 7 major code smells.
 
-### b/
-
+### c/
 
