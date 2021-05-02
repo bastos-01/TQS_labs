@@ -2,5 +2,5 @@ projectKey=tqslabs:euromillions-play
 serverUrl=http://127.0.0.1:9000
 serverVersion=8.8.0.42792
 dashboardUrl=http://127.0.0.1:9000/dashboard?id=tqslabs%3Aeuromillions-play
-ceTaskId=AXkPT54UVzaj0IYsedn9
-ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AXkPT54UVzaj0IYsedn9
+ceTaskId=AXkvZebGKxFabP1zS_P5
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AXkvZebGKxFabP1zS_P5

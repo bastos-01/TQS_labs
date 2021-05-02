@@ -29,5 +29,13 @@ Although it has passed, it has a bug in the code and a security hotspot. After a
 
 The total technical debt found was **2h10min**. This value means that it would take aproximatly 2h20min to refactor the code and solve this issues. The file that would take the most time to solve is in ***src/main/java/ui/DemoMain.java***, as it has 7 major code smells.
 
-### c/
+### d/
+
+Using the same euromillions project (already had the jacoco plugin):
+
+![](img/coverage.png)
+
+As we can see, there is a 71% code coverage, with 131 uncovered lines. Besides that, there are 12 conditions that need coverage, making a 76.9% condition coverage.
+
+
 
